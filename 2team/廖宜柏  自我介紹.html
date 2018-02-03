@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<title>自我介紹</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("https://content.pulse.ea.com/content/legacy/battlefield-portal/en_US/news/battlefield-1/battlefield-1-alan-walker-the-spectre-prize/_jcr_content/body/image_66228954/renditions/rendition1.img.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://userscontent2.emaze.com/images/a4862765-ceae-431a-99c2-a72a36804b50/38e3319668c4a90f85dd5355e6233d58.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("https://3d-car-shows.com/wp-content/uploads/Concept-Car-Design.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> INTREST</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Expertise</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">INTREST</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Expertise</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">I'm <span class="w3-hide-small">廖宜柏</span> 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I'm 廖宜柏</em></p>
+  <center>
+  <p>今年就讀高一，來自台中，最能代表自子的信念是「用心=成功」，Nice To Meet You!!</p>
+  </center>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <center>
+      <img src="https://i.imgur.com/XELUwWN.jpg" alt="Photo of Me" width="500" height="333">
+   </center>
+   </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+     
+    </div>
+  </div>
+ 
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <center>
+    <span class="w3-xxlarge w3-text-white w3-wide">MY INTEREST</span>
+   <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </center>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center""My Interest"</h3>
+  <p class="w3-center"><em>Research Car,Drawing</em></p>
+<img src="data:image/jpeg;base64,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" alt="car"height="300" width="460" >
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">MY EXPERTISE</span>
+  </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">MY EXPERTISE</h3>
+  <p class="w3-center"><em>Drawing,Singing,Designing</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+    
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
